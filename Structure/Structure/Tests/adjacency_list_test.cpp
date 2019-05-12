@@ -13,12 +13,12 @@
 #include <cxxtest/ErrorPrinter.h>
 
 bool suite_adjacency_list_test_init = false;
-#include "adjacency_list_test.h"
+#include "C:\Users\Luke\Documents\Programming\GraphProject\Structure\Structure\Tests\adjacency_list_test.h"
 
 static adjacency_list_test suite_adjacency_list_test;
 
 static CxxTest::List Tests_adjacency_list_test = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_adjacency_list_test( "adjacency_list_test.h", 8, "adjacency_list_test", suite_adjacency_list_test, Tests_adjacency_list_test );
+CxxTest::StaticSuiteDescription suiteDescription_adjacency_list_test( "Tests/adjacency_list_test.h", 8, "adjacency_list_test", suite_adjacency_list_test, Tests_adjacency_list_test );
 
 static class TestDescription_suite_adjacency_list_test_testInitialisation : public CxxTest::RealTestDescription {
 public:

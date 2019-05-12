@@ -2,8 +2,8 @@
 
 #include <cxxtest/TestSuite.h>
 
-#include "adjacency_list.h"
-#include "directed_graph.h"
+#include "../Graph/Directed/directed_graph.h"
+#include "../Graph/Adjacency Representations/adjacency_list.h"
 
 class adjacency_list_test : public CxxTest::TestSuite
 {

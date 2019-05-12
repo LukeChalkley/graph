@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <CustomBuildStep>
       <Command>
@@ -102,8 +103,8 @@
       </Outputs>
     </CustomBuild>
     <PreBuildEvent>
-      <Command>C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --part --error-printer -o adjacency_list_test.cpp adjacency_list_test.h
-C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template test_template.cpp -o graph_test_runner.cpp</Command>
+      <Command>C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --part --error-printer -o Tests\adjacency_list_test.cpp Tests\adjacency_list_test.h
+C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template Tests\test_template.cpp -o Tests\graph_test_runner.cpp</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Building test suite cpp.</Message>
@@ -116,6 +117,9 @@ C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template test
       <Message>
       </Message>
     </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -149,8 +153,8 @@ C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template test
       </Outputs>
     </CustomBuild>
     <PreBuildEvent>
-      <Command>C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --part --error-printer -o adjacency_list_test.cpp adjacency_list_test.h
-C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template test_template.cpp -o graph_test_runner.cpp</Command>
+      <Command>C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --part --error-printer -o Tests\adjacency_list_test.cpp Tests\adjacency_list_test.h
+C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template Tests\test_template.cpp -o Tests\graph_test_runner.cpp</Command>
     </PreBuildEvent>
     <PreBuildEvent>
       <Message>Building test suite cpp.</Message>
@@ -193,9 +197,9 @@ C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template test
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="adjacency_container.h" />
-    <ClInclude Include="adjacency_list.h" />
-    <ClInclude Include="adjacency_list_test.h">
+    <ClInclude Include="Graph\Adjacency Representations\adjacency_container.h" />
+    <ClInclude Include="Graph\Adjacency Representations\adjacency_list.h" />
+    <ClInclude Include="Tests\adjacency_list_test.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -209,16 +213,16 @@ C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template test
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Outputs>
     </ClInclude>
-    <ClInclude Include="directed_graph.h" />
-    <ClInclude Include="graph.h" />
+    <ClInclude Include="Graph\Directed\directed_graph.h" />
+    <ClInclude Include="Graph\graph.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="adjacency_list.cpp" />
-    <ClCompile Include="adjacency_list_test.cpp" />
-    <ClCompile Include="directed_graph.cpp" />
-    <ClCompile Include="graph.cpp" />
-    <ClCompile Include="graph_test_runner.cpp" />
-    <ClCompile Include="test_template.cpp">
+    <ClCompile Include="Graph\Adjacency Representations\adjacency_list.cpp" />
+    <ClCompile Include="Tests\adjacency_list_test.cpp" />
+    <ClCompile Include="Graph\Directed\directed_graph.cpp" />
+    <ClCompile Include="Graph\graph.cpp" />
+    <ClCompile Include="Tests\graph_test_runner.cpp" />
+    <ClCompile Include="Tests\test_template.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
