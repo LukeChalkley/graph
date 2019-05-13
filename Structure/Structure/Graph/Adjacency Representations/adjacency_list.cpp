@@ -77,4 +77,10 @@ bool adjacency_list<vertex>::contains(const vertex &vert) const
 	return _edges.find(vert) != _edges.cend();
 }
 
+template<typename vertex>
+vertex_iterator<vertex> adjacency_list<vertex>::get_vertex_iterator()
+{
+	return vertex_iterator<vertex>();
+}
+
 #endif

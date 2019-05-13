@@ -16,42 +16,57 @@
     <Filter Include="Test Files">
       <UniqueIdentifier>{91ef301c-ce18-4d7e-b202-fc9748a4b461}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Iterator Files">
+      <UniqueIdentifier>{63b8412a-af3d-45e8-a606-f3b779b2989b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="graph.h">
+    <ClInclude Include="Graph\Adjacency Representations\adjacency_container.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="directed_graph.h">
+    <ClInclude Include="Graph\Adjacency Representations\adjacency_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="adjacency_container.h">
+    <ClInclude Include="Graph\Directed\directed_graph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="adjacency_list.h">
+    <ClInclude Include="Graph\graph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="adjacency_list_test.h">
+    <ClInclude Include="Tests\adjacency_list_test.h">
       <Filter>Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\iterator_test.h">
+      <Filter>Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Iterators\graph_iterator.h">
+      <Filter>Iterator Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Iterators\vertex_iterator.h">
+      <Filter>Iterator Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="directed_graph.cpp">
+    <ClCompile Include="Graph\Adjacency Representations\adjacency_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="adjacency_list.cpp">
+    <ClCompile Include="Graph\Directed\directed_graph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_template.cpp">
-      <Filter>Test Files</Filter>
-    </ClCompile>
-    <ClCompile Include="adjacency_list_test.cpp">
-      <Filter>Test Files</Filter>
-    </ClCompile>
-    <ClCompile Include="graph_test_runner.cpp">
-      <Filter>Test Files</Filter>
-    </ClCompile>
-    <ClCompile Include="graph.cpp">
+    <ClCompile Include="Graph\graph.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\adjacency_list_test.cpp">
+      <Filter>Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\graph_test_runner.cpp">
+      <Filter>Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\test_template.cpp">
+      <Filter>Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\Iterators\vertex_iterator.cpp">
+      <Filter>Iterator Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

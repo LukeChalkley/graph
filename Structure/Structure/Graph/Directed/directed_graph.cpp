@@ -1,7 +1,7 @@
-#include "directed_graph.h"
-
 #ifndef DIRECTED_GRAPH_IMP
 #define DIRECTED_GRAPH_IMP
+
+#include "directed_graph.h"
 
 template <typename vertex, typename adjacency_container>
 directed_graph<vertex, adjacency_container>::directed_graph()

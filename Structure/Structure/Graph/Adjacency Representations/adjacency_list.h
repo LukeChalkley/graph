@@ -2,6 +2,7 @@
 #define ADJACENCY_LIST
 
 #include "adjacency_container.h"
+#include "../Iterators/vertex_iterator.h"
 
 #include <map>
 #include <set>
@@ -24,6 +25,8 @@ class adjacency_list : public adjacency_container<vertex>
 		size_t num_edges() const override;
 		size_t num_vertices() const override;
 		bool contains(const vertex&) const override;
+
+		vertex_iterator<vertex> get_vertex_iterator() override;
 };
 
 #include "adjacency_list.cpp"

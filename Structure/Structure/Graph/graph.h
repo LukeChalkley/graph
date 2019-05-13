@@ -3,6 +3,7 @@
 
 #include "Adjacency Representations/adjacency_container.h"
 
+
 template <typename vertex, typename adjacency_container>
 class graph
 {

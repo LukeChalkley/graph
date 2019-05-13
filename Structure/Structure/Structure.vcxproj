@@ -199,6 +199,8 @@ C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template Test
   <ItemGroup>
     <ClInclude Include="Graph\Adjacency Representations\adjacency_container.h" />
     <ClInclude Include="Graph\Adjacency Representations\adjacency_list.h" />
+    <ClInclude Include="Graph\Iterators\graph_iterator.h" />
+    <ClInclude Include="Graph\Iterators\vertex_iterator.h" />
     <ClInclude Include="Tests\adjacency_list_test.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </Command>
@@ -215,9 +217,11 @@ C:\cxxtest-4.4\cxxtest-4.4\bin\cxxtestgen --root --error-printer --template Test
     </ClInclude>
     <ClInclude Include="Graph\Directed\directed_graph.h" />
     <ClInclude Include="Graph\graph.h" />
+    <ClInclude Include="Tests\iterator_test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Graph\Adjacency Representations\adjacency_list.cpp" />
+    <ClCompile Include="Graph\Iterators\vertex_iterator.cpp" />
     <ClCompile Include="Tests\adjacency_list_test.cpp" />
     <ClCompile Include="Graph\Directed\directed_graph.cpp" />
     <ClCompile Include="Graph\graph.cpp" />
